@@ -1,1 +1,42 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Wallet</title>
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+<nav class="nav">
+  <div class="brand">Crash Game</div>
+  <div class="nav-right">
+    <a href="/game.html">Play</a>
+    <span class="balance">KES <span id="balance">0.00</span></span>
+    <button id="logoutBtn">Logout</button>
+  </div>
+</nav>
+
+<main class="wallet-main">
+  <div class="card">
+    <h2>Deposit via M-Pesa</h2>
+    <p class="muted">You will receive an STK Push on your phone.</p>
+    <label>Amount (KES)</label>
+    <input type="number" id="depositAmount" min="1" value="50" />
+    <button id="depositBtn" class="btn-primary">Send STK Push</button>
+    <p class="msg" id="depositMsg"></p>
+  </div>
+
+  <div class="card">
+    <h2>Withdraw</h2>
+    <p class="muted">Requests go to pending. An admin will approve.</p>
+    <label>Amount (KES)</label>
+    <input type="number" id="withdrawAmount" min="50" value="100" />
+    <button id="withdrawBtn" class="btn-primary">Request Withdrawal</button>
+    <p class="msg" id="withdrawMsg"></p>
+  </div>
+</main>
+
+<script src="/js/wallet.js"></script>
+</body>
+</html>
