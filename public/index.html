@@ -1,1 +1,39 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Crash Game — Login</title>
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+<div class="auth-wrap">
+  <div class="auth-card">
+    <h1>Crash Game</h1>
+    <p class="subtitle">Play with KES via M-Pesa</p>
+
+    <div class="tabs">
+      <button class="tab active" data-tab="login">Login</button>
+      <button class="tab" data-tab="register">Register</button>
+    </div>
+
+    <form id="loginForm" class="form active">
+      <input type="text" id="loginPhone" placeholder="Phone (07XX or 2547XX)" required />
+      <input type="password" id="loginPassword" placeholder="Password" required />
+      <button type="submit">Login</button>
+      <p class="error" id="loginError"></p>
+    </form>
+
+    <form id="registerForm" class="form">
+      <input type="text" id="regUsername" placeholder="Username" required />
+      <input type="text" id="regPhone" placeholder="Phone (07XX or 2547XX)" required />
+      <input type="password" id="regPassword" placeholder="Password" required />
+      <button type="submit">Create Account</button>
+      <p class="error" id="regError"></p>
+    </form>
+  </div>
+</div>
+<script src="/js/auth.js"></script>
+</body>
+</html>
