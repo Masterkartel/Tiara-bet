@@ -1,12 +1,8 @@
-
-const mongoose = require("mongoose");
-
-module.exports = async function connectDB() {
-  try {
-    await mongoose.connect(process.env.MONGODB_URI);
-    console.log("MongoDB connected");
-  } catch (err) {
-    console.error("MongoDB connection error:", err.message);
-    process.exit(1);
-  }
+module.exports = {
+  ROUND_INTERVAL_MS: 15000,
+  GROWTH_FACTOR: 0.28,
+  MAX_CRASH_MULTIPLIER: 15,
+  MIN_BET: 10,
+  MIN_WITHDRAWAL: 50,
+  CURRENCY: "KES",
 };
