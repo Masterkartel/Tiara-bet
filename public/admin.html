@@ -1,1 +1,38 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Admin — Pending Withdrawals</title>
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+<nav class="nav">
+  <div class="brand">Admin Panel</div>
+</nav>
+
+<main class="admin-main">
+  <div class="card">
+    <h2>Pending Withdrawals</h2>
+    <input type="password" id="adminKey" placeholder="Enter admin key" />
+    <button id="loadBtn" class="btn-primary">Load</button>
+    <p class="msg" id="adminMsg"></p>
+    <table id="withdrawTable">
+      <thead>
+        <tr>
+          <th>Player</th>
+          <th>Phone</th>
+          <th>Amount (KES)</th>
+          <th>Requested</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</main>
+
+<script src="/js/admin.js"></script>
+</body>
+</html>
